@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Web Menggunkan Iframe</title>
+</head>
+
+<frameset rows="100, *, 50" frameborder="1" border="1" framespacing="1">
+
+    <!-- Header Frame -->
+    <frame src="header.html" name="headerframe" scrolling="no" noresize>
+    
+    <!-- Sidebar and Main Content Frames -->
+    <frameset cols="25%, 75%" frameborder="1" border="1" framespacing="1">
+        <frame src="sidebar.html" name="menuframe" scrolling="auto" noresize>
+        <frame src="main.html" name="showframe" scrolling="auto" noresize>
+    </frameset>
+
+    <!-- Footer Frame -->
+    <frame src="footer.html" name="footerframe" scrolling="no" noresize>
+
+
+</frameset> 
+</html>
